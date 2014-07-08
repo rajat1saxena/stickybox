@@ -1,0 +1,45 @@
+body{
+	background: black;
+	min-height: 500px;
+}
+
+/**
+* This is the main style for the StickyBox
+*/
+div#stickybox{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+div#innersticky{
+	position: relative;
+	width: 170px;
+	height: 43px;
+	margin: 0px auto;
+	background: red;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	box-shadow: inset 0px 1px 1px white;
+}
+div#innersticky ul{
+	list-style: none;
+	padding: 0 10px;
+	display: block;
+}
+div#innersticky ul li{
+	float: left;
+	display: block;
+	padding: 0 10px;
+	margin-top: 8px;
+}
+div#innersticky ul li+li{
+	border-left: 1px solid rgb(182, 182, 182);
+}
+div#innersticky ul li a.stickylink{
+	/*background: url('fb.png') center center no-repeat;*/
+	display: block;
+}
+div#innersticky ul li a.stickylink img{
+	height: 28px;
+}
